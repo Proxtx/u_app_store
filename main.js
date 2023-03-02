@@ -1,9 +1,11 @@
 import fs from "fs/promises";
+import { fileURLToPath } from "url";
 
 export class App {
   constructor() {
     this.filePath =
-      import.meta.url.split("file:///")[1].split("main.js")[0] + "/store.json";
+      fileURLToPath(import.meta.url).split("main.js")[0] + "/store.json";
+    console.log(this.filePath);
   }
 
   async store(id, value) {
