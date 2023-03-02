@@ -1,0 +1,29 @@
+{
+  "methods": {
+    "store": {
+      "name": "Store",
+      "arguments": [
+        {
+          "type": "text",
+          "name": "Identifier",
+          "placeholder": "Id"
+        },
+        {
+          "type": "text",
+          "name": "Value",
+          "placeholder": "Value"
+        }
+      ]
+    },
+    "get": {
+      "name": "Get",
+      "arguments": [
+        {
+          "type": "text",
+          "name": "Identifier",
+          "placeholder": "Id"
+        }
+      ]
+    }
+  }
+}
