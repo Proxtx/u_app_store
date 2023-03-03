@@ -18,4 +18,10 @@ export class App {
     let obj = JSON.parse(await fs.readFile(this.filePath, "utf8"));
     return obj[id];
   }
+
+  async delete(id) {
+    let v = await this.get(id);
+    await this.store(id, undefined);
+    return v;
+  }
 }

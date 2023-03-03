@@ -24,6 +24,16 @@
           "placeholder": "Id"
         }
       ]
+    },
+    "delete": {
+      "name": "Delete",
+      "arguments": [
+        {
+          "type": "text",
+          "name": "Identifier",
+          "placeholder": "Id"
+        }
+      ]
     }
   }
 }
