@@ -24,6 +24,16 @@
           "options": []
         }
       ]
+    },
+    "delete": {
+      "name": "Delete",
+      "arguments": [
+        {
+          "type": "select",
+          "name": "Identifier",
+          "options": []
+        }
+      ]
     }
   }
 }

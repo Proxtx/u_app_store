@@ -26,8 +26,10 @@ export class App {
   }
 
   async updateDefinitions() {
-    this.definitions.methods.get.arguments[0].options = Object.keys(
+    let values = Object.keys(
       JSON.parse(await fs.readFile(this.filePath, "utf8"))
     );
+    this.definitions.methods.get.arguments[0].options = values;
+    this.definitions.methods.delete.arguments[0].options = values;
   }
 }
