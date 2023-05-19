@@ -24,4 +24,10 @@ export class App {
     await this.store(id, undefined);
     return v;
   }
+
+  async updateDefinitions() {
+    this.definitions.methods.get.arguments[0].options = Object.keys(
+      JSON.parse(await fs.readFile(this.filePath, "utf8"))
+    );
+  }
 }
